@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('company',50);
             $table->string('arrival_station',50);
-            $table->date('departure_time');
-            $table->date('arrival_time');
+            $table->dateTime('departure_time');
+            $table->dateTime('arrival_time');
             $table->string('train_code',12);
             $table->tinyInteger('num_of_railways');
             $table->boolean('is_on_time');

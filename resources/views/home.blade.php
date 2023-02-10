@@ -7,17 +7,17 @@
             
             <div class="my_cards-container my_d-flex my_wrap my_justify-center">
                 @forelse ($trains as $train)
-                    <article class="my_card my_text-center" title="Titolo Originale :{{$train->original_title}}">
+                    <article class="my_card my_text-center">
                         <a href="{{route(Request::route()->getName()) . '/' . $loop->iteration}}">
                             <ul>
-                                <li>{{$train->company}}</li>
-                                <li>{{$train->arrival_station}}</li>
-                                <li>{{$train->departure_time}}</li>
-                                <li>{{$train->arrival_time}}</li>
-                                <li>{{$train->train_code}}</li>
-                                <li>{{$train->num_of_railways}}</li>
-                                <li>{{$train->is_on_time}}</li>
-                                <li>{{$train->was_removed}}</li>
+                                <li>Compagnia del treno:{{$train->stringFirstLetterToUppecase($train->company)}}</li>
+                                <li>Stazione di arrivo:{{$train->stringFirstLetterToUppecase($train->arrival_station)}}</li>
+                                <li>Orario di partenza:{{$train->replaceElementInString('-','/',$train->departure_time)}}</li>
+                                <li>Orario di arrivo:{{$train->replaceElementInString('-','/',$train->arrival_time)}}</li>
+                                <li>Codice treno:{{$train->train_code}}</li>
+                                <li>Numero di vagoni:{{$train->num_of_railways}}</li>
+                                <li>E' puntuale:{{$train->is_on_time}}</li>
+                                <li>E' stato cancellato:{{$train->was_removed}}</li>
                             </ul>
                         </a>
                     </article>
