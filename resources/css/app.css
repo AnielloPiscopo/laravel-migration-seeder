@@ -1,0 +1,22 @@
+a {
+    color: black;
+}
+
+.my_container {
+    padding: 1.2rem 15rem;
+}
+
+.my_cards-container .my_card {
+    width: calc(100% / 3);
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.my_cards-container .my_card:hover {
+    filter: brightness(90%);
+}
+
+.my_cards-container .my_card:active {
+    filter: brightness(50%);
+}

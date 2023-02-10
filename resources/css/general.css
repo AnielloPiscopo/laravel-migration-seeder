@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.my_d-flex {
+    display: flex;
+}
+
+.my_d-flex.my_justify-center {
+    justify-content: center;
+}
+
+.my_d-flex.my_justify-between {
+    justify-content: space-between;
+}
+
+.my_d-flex.my_justify-around {
+    justify-content: space-around;
+}
+
+.my_d-flex.my_align-center {
+    align-items: center;
+}
+
+.my_d-flex.my_wrap {
+    flex-wrap: wrap;
+}
+
+.my_d-flex.my_column {
+    flex-direction: column;
+}
+
+.my_p-relative {
+    position: relative;
+}
+
+.my_p-absolute {
+    position: absolute;
+}
+
+.my_text-center {
+    text-align: center;
+}
+
+.my_text-uppercase {
+    text-transform: uppercase;
+}
