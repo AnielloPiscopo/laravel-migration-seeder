@@ -9,7 +9,8 @@ use Illuminate\Http\Request;
 class TrainInfoController extends Controller
 {
     public function index(){
-        $trains = Train::all();
+        $numOfSeenElements = 9;
+        $trains = Train::limit($numOfSeenElements)->get();
         return view('home' , compact('trains'));
     }
 }
