@@ -1,3 +1,13 @@
+/*
+|--------------------------------------------------------------------------
+| App Layout
+|--------------------------------------------------------------------------
+|
+| This is the main layout that will be used 
+| for the mainly part of website.
+|
+*/
+
 <!DOCTYPE html>
 <html lang="ita">
     <head>

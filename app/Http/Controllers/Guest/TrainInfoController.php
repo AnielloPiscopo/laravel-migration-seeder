@@ -1,5 +1,14 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Train Info Controller
+|--------------------------------------------------------------------------
+|
+| A controller for the istance Train
+|
+*/
+
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
